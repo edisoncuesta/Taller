@@ -10,47 +10,73 @@
     android:orientation="vertical"
     tools:context="com.example.aula7.taller.TallerPractico">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:background="@drawable/border">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src=""/>
+                    android:src="@drawable/postre"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorGreen"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/id_img_checked"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/checkedgreen"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="THE OXFORD"
+                            android:layout_toRightOf="@id/id_img_checked"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/colorOrange"/>
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="10dp"
+                            android:background="@color/colorAccent"/>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
 
-
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
+
+
         </LinearLayout>
-
     </ScrollView>
-
-
-
-
-
-
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_margin="0dp"
-        android:background="@drawable/border"
-        android:elevation="15dp"
-        android:orientation="vertical">
-
-
 
 
         </android.support.design.widget.CoordinatorLayout>
